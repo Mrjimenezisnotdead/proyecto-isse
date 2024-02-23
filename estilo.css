@@ -82,3 +82,73 @@ h1{
    
 }
 
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas ajustables */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Alinea las tarjetas al centro horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    max-width: 90%; /* Ancho máximo del contenedor */
+}
+
+.tarjeta {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+     }
+    
+
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        width: 100%; /* Cambia el ancho a 100% en pantallas más pequeñas */
+    }
+}
+
+.panel-info {
+    border-left: 4px solid #007bff; 
+    background-color: #f0f0f0;
+    padding: 16px;
+    margin: 16px;
+  }
+  .titulo {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .contenido {
+    color: #333;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .panel-info {
+      margin: 8px;
+      padding: 12px;
+    }
+    .titulo {
+      font-size: 16px;
+    }
+  }
