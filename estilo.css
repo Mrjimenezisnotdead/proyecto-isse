@@ -63,19 +63,30 @@ h1{
     text-align: center;
 }
 
-.galeria{
+.galeria {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    position: relative;
+    
 }
 
-.galeria img{
+.galeria img {
     max-width: 300px;
     padding: 1rem;
     height: auto;
+    cursor: pointer;
+    position: relative;
 }
 
-.card img{
+
+
+.expand-image:hover {
+    transform: scale(1.1);
+}
+
+
+.card img {
     
     height: auto;
     justify-content: center;
@@ -84,11 +95,11 @@ h1{
 
 .contenedor-tarjetas {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas ajustables */
-    gap: 20px; /* Espacio entre las tarjetas */
-    justify-items: center; /* Alinea las tarjetas al centro horizontalmente */
-    margin: 0 auto; /* Centra el contenedor en la pantalla */
-    max-width: 90%; /* Ancho máximo del contenedor */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+    margin: 0 auto; 
+    max-width: 90%; 
 }
 
 .tarjeta {
