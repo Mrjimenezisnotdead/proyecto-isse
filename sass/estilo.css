@@ -1,0 +1,193 @@
+@charset "UTF-8";
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  border: 20px solid;
+}
+
+.section.padding {
+  padding: 70px;
+}
+
+.carousel-item {
+  height: 80vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 200px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  color: whitesmoke;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  border-style: solid;
+}
+
+.carousel-caption p {
+  color: whitesmoke;
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: attr();
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 30, 82, 0.327);
+  z-index: 1;
+}
+
+.navbar-nav {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.tarjeta p {
+  text-align: center;
+}
+
+.col h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+.galeria {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.galeria img {
+  max-width: 300px;
+  padding: 1rem;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.expand-image:hover {
+  transform: scale(1.1);
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.video-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.video-item img {
+  max-width: 90%;
+  height: auto;
+}
+
+.card img {
+  height: auto;
+  justify-content: center;
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.tarjeta {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.pie-de-pagina p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    width: 100%; /* Cambia el ancho a 100% en pantallas más pequeñas */
+  }
+}
+.panel-info {
+  border-left: 4px solid #007bff;
+  background-color: #f0f0f0;
+  padding: 16px;
+  margin: 16px;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contenido {
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .panel-info {
+    margin: 8px;
+    padding: 12px;
+  }
+  .titulo {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=estilo.css.map */
