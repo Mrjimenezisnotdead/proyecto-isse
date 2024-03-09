@@ -1,0 +1,7 @@
+/* _mixins.scss */
+
+@mixin media-breakpoint($point) {
+    @media screen and (max-width: $point) {
+      @content;
+    }
+  }

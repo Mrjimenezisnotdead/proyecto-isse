@@ -1,0 +1,25 @@
+/* _body.scss */
+
+body {
+    background-color: $body-bg;
+    margin: 0;
+    padding: 0;
+    border: 20px solid;
+    
+    @include media-breakpoint(1920px) {
+      background-color: $body-bg;
+    }
+    
+    @include media-breakpoint(1280px) {
+      background-color: $primary-color;
+    }
+    
+    @include media-breakpoint(800px) {
+      background-color: $secondary-color;
+    }
+    
+    @include media-breakpoint(480px) {
+      background-color: $tertiary-color;
+    }
+  }
+  

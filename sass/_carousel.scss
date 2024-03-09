@@ -1,0 +1,39 @@
+/* _carousel.scss */
+
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+  }
+  
+  .carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+  }
+  
+  .carousel-caption h5 {
+    color: whitesmoke;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    border-style: solid;
+  }
+  
+  .carousel-caption p {
+    color: whitesmoke;
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+  }
+  
+  .carousel-inner::before {
+    content: attr();
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 30, 82, 0.327);
+    z-index: 1;
+  }

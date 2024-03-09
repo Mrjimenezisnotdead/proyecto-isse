@@ -1,0 +1,20 @@
+/* _galeria.scss */
+
+.galeria {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .galeria img {
+    max-width: 300px;
+    padding: 1rem;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .expand-image:hover {
+    transform: scale(1.1);
+  }
